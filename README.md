@@ -37,8 +37,8 @@ Amazon API Gateway Version 1 VPC Links enable private integrations that connect 
 <br>
 
 ## Examples
-
 Look at our [Terraform example](latest/examples/terraform/) where you can get a better context of usage for both Terraform. The Terragrunt example can be viewed directly from GitHub.
+<br>
 
 ## Assumptions
   * Public REST API Only
@@ -175,16 +175,11 @@ module "vpc-links" {
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.14.0 
 | <a name="requirement_terragrunt"></a> [terragrunt](#requirement\_terragrunt) | >= 0.28.0 |
 
-<br>
-
-
 ## Providers
 
 | Name | Version |
 |------|---------|
 | <a name="provider_aws"></a> [aws](#provider\_aws) | >= 4.30.0 |
-
-<br>
 
 ## Resources
 
@@ -192,10 +187,6 @@ module "vpc-links" {
 |------|------|
 | [apigateway_vpc_link.rsm](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/api_gateway_vpc_link) | resource |
 | [apigatewayv2_vpc_link.rsm](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/apigatewayv2_vpc_link) | resource |
-
-
-<br>
-
 
 ## Available Inputs
 
@@ -208,16 +199,11 @@ module "vpc-links" {
 | HTTP VPC Link Security Groups | `apigatewayv2_vpc_link` | `security_group_ids` | `string`  | `null`  | Yes      |
 | HTTP VPC Link Subnet Ids      | `apigatewayv2_vpc_link` | `subnet_ids`         | `string`  | `null`  | Yes      |
 
-<br>
-
 ## Predetermined Inputs
 
 | Name                 | Resource               | Property   | Data Type | Default | Required?
 | -------------------- | ---------------------- | ---------- | --------- | ------- | -------- |
 |                      |                        |            |           |         |          |
-
-
-<br>
 
 ## Outputs
 
@@ -230,9 +216,6 @@ module "vpc-links" {
 | apigatewayv2_vpc_link.name               | Name of the HTTP VPC Link.             |
 | apigatewayv2_vpc_link.security_group_ids | Security Groups for the HTTP VPC link. |
 | apigatewayv2_vpc_link.subnet_ids         | Subnet Ids for the HTTP VPC link.      |
-
-
-<br>
 
 ## Supporting Articles & Documentation
   - AWS Hyperplane and AWS PrivateLink
