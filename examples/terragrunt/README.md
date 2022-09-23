@@ -37,7 +37,6 @@ dependency "vpc" {
 
 terraform {
   source = "git::git@github.com:adamwshero/terraform-aws-api-gateway-vpc-link.git//.?ref=1.0.0"
-
 }
 
 inputs = {
@@ -101,10 +100,6 @@ inputs = {
 | [apigateway_vpc_link.rsm](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/api_gateway_vpc_link) | resource |
 | [apigatewayv2_vpc_link.rsm](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/apigatewayv2_vpc_link) | resource |
 
-
-<br>
-
-
 ## Available Inputs
 
 | Name                          | Resource                | Variable             | Data Type | Default | Required?
@@ -116,16 +111,11 @@ inputs = {
 | HTTP VPC Link Security Groups | `apigatewayv2_vpc_link` | `security_group_ids` | `string`  | `null`  | Yes      |
 | HTTP VPC Link Subnet Ids      | `apigatewayv2_vpc_link` | `subnet_ids`         | `string`  | `null`  | Yes      |
 
-<br>
-
 ## Predetermined Inputs
 
 | Name                 | Resource               | Property   | Data Type | Default | Required?
 | -------------------- | ---------------------- | ---------- | --------- | ------- | -------- |
 |                      |                        |            |           |         |          |
-
-
-<br>
 
 ## Outputs
 
@@ -138,9 +128,6 @@ inputs = {
 | apigatewayv2_vpc_link.name               | Name of the HTTP VPC Link.             |
 | apigatewayv2_vpc_link.security_group_ids | Security Groups for the HTTP VPC link. |
 | apigatewayv2_vpc_link.subnet_ids         | Subnet Ids for the HTTP VPC link.      |
-
-
-<br>
 
 ## Supporting Articles & Documentation
   - AWS Hyperplane and AWS PrivateLink
