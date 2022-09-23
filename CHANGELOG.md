@@ -1,3 +1,9 @@
+## 1.0.1 (September 23, 2022)
+
+CHORE:
+
+  * Added Terraform example
+
 ## 1.0.0 (September 23, 2022)
 
 INITIAL:
