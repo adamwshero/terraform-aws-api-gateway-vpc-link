@@ -1,5 +1,5 @@
 module "vpc-links" {
-  source                = "git@github.com:adamwshero/terraform-aws-api-gateway-vpc-link.git//.?ref=1.0.0"
+  source                = "git@github.com:adamwshero/terraform-aws-api-gateway-vpc-link.git//.?ref=1.0.2"
   create_rest_vpc_links = true
   create_http_vpc_links = true
 
