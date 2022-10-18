@@ -9,13 +9,8 @@ variable "create_rest_vpc_links" {
 
 variable "rest_vpc_links" {
   description = "Map of objects that define the vpc links that get created."
-  type = list(object(
-    {
-      name        = string
-      description = string
-      target_arns = list(string)
-    }
-  ))
+  type        = any
+  default     = []
 }
 
 ####################################
@@ -29,13 +24,8 @@ variable "create_http_vpc_links" {
 
 variable "http_vpc_links" {
   description = "Map of objects that define the vpc links that get created."
-  type = list(object(
-    {
-      name               = string
-      security_group_ids = list(string)
-      subnet_ids         = list(string)
-    }
-  ))
+  type        = any
+  default     = []
 }
 
 variable "tags" {
